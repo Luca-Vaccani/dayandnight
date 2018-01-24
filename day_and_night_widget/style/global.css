@@ -1,0 +1,17 @@
+/* CSS paths relative to file placement */
+
+
+#container
+{
+    width:500px;
+    height:500px;
+    position: fixed;
+    background-image: url('../image/dayandnight-frame.png');
+}
+
+#image {
+    z-index: 1;
+    position: absolute;
+}
+
+

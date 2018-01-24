@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Day and Night Widget</title>
+    <meta name="description" content="A time-based widget, which changes icons depending on time of day.">
+    <meta name="author" content="Luca Vaccani">
+    <link rel="stylesheet" href="style/global.css">
+</head>
+
+<body>
+
+        
+        <!---WIDGET BEGINS HERE--->
+        <!---IMAGE SIZE 500px x 500px--->
+        <!---First HTML, then CSS, then Javascript--->
+        <!---UPLOAD TO Emerson.build - Public - Projects Folder--->
+    
+        <div id="container">
+            <img id="image" src="image/dayandnight-sun.png">
+        </div>
+            
+    <script>
+            var date = new Date();
+            var hours = currentDate.getHours();
+            if ( (hours < 8) || (hours > 20) ) {
+            document.getElementById("image").src = "image/dayandnight-moon.png";
+            } 
+            else {
+            document.getElementById("image").src = "image/dayandnight-sun.png";
+            }
+    </script>
+    
+    <!---document.getElementById("myImage").src = "dayandnight-frame.png"--->
+        
+
+</body>
+</html>
